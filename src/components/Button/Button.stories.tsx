@@ -4,11 +4,13 @@ import { Button } from "./Button"
 
 const meta = {
   component: Button,
+  tags: ['autodocs'],
 } satisfies Meta<typeof Button>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
+/** Primary variant. Used as 'default'*/
 export const Primary: Story = {
   args: {
     variant: "primary",
@@ -16,6 +18,7 @@ export const Primary: Story = {
   },
 }
 
+/** Secondary variant*/
 export const Secondary: Story = {
   args: {
     variant: "secondary",
@@ -23,6 +26,7 @@ export const Secondary: Story = {
   },
 }
 
+/** Outlined variant*/
 export const Outlined: Story = {
   args: {
     variant: "outlined",
@@ -30,6 +34,7 @@ export const Outlined: Story = {
   },
 }
 
+/** Link as Button variant*/
 export const LinkAsButton: Story = {
   args: {
     asChild: true,
